@@ -22,6 +22,7 @@ jobs:
     - name: Run tests
       run: |
         pwd
-        newman run test-collection.json -e test-environment.json
+        ls
+        newman run ./test-collection.json -e ./test-environment.json
       
   
