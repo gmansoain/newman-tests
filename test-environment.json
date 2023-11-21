@@ -1,0 +1,28 @@
+{
+	"id": "33397bba-9170-4c4e-b689-14d84a1fb97b",
+	"name": "PS-Demo",
+	"values": [
+		{
+			"key": "salesforce-sapi",
+			"value": "salesforce-system-api-17ekvx.a671fi.gbr-e1.cloudhub.io/api",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "client_id",
+			"value": "e61b07bf92544446a6914f2496c646ba",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "client_secret",
+			"value": "e6aD4d32CBc043cdb6f2387ac87b6259",
+			"type": "default",
+			"enabled": true
+		}
+		
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2023-11-21T16:43:20.407Z",
+	"_postman_exported_using": "Postman/10.20.0-231018-1251"
+}

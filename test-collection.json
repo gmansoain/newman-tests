@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "683ea1b2-f55b-405a-83ba-dc57b2a251af",
+		"name": "GON Salesforce System API Testing Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3257783",
+		"_collection_link": "https://vidsigneritequia.postman.co/workspace/GON-Mule~3af5d665-c687-4d45-85e6-35c2c50ef956/collection/3257783-683ea1b2-f55b-405a-83ba-dc57b2a251af?action=share&source=collection_link&creator=3257783"
+	},
+	"item": [
+		{
+			"name": "Readiness Probe",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{salesforce-sapi}}/ready",
+					"protocol": "https",
+					"host": [
+						"{{salesforce-sapi}}"
+					],
+					"path": [
+						"ready"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Liveness Probe",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{salesforce-sapi}}/alive",
+					"protocol": "https",
+					"host": [
+						"{{salesforce-sapi}}"
+					],
+					"path": [
+						"alive"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
