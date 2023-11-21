@@ -24,6 +24,6 @@ jobs:
     - name: Run tests
       run: |
         pwd
-        newman run postman/test-collection.json -e postman/test-environment.json
+        newman run postman/test-collection.json -e postman/test-environment.json -r htmlextra --reporter-htmlextra-export testsResults/htmlreport.html --reporter-htmlextra-darkTheme > testsResults/runreport1.html
       
   
