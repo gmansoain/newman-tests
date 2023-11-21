@@ -11,7 +11,7 @@ jobs:
     - name: Install Node
       uses: actions/setup-node@v1
       with:
-        node-version: "12.x"
+        node-version: "16.x"
     # Install Newman
     - name: Install Newman
       run: |
