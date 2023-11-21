@@ -9,9 +9,7 @@ jobs:
     steps:
     # Install Node on the runner
     - name: Install Node
-      uses: actions/setup-node@v1
-      with:
-        node-version: "16.x"
+      uses: actions/setup-node@v4
     # Install Newman
     - name: Install Newman
       run: |
@@ -23,6 +21,7 @@ jobs:
     # Run tests
     - name: Run tests
       run: |
+        pwd
         newman run test-collection.json -e test-environment.json
       
   
